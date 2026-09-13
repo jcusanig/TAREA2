@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegador de Archivos - Estructura de Pila</title>
+    <link rel="stylesheet" href="tarea2-2.css">
+</head>
+
+<body>
+
+    <div class="explorer-container">
+        <!-- Barra de Navegación -->
+        <div class="navbar">
+            <button id="btn-back" class="btn-back" onclick="goBack()" disabled>← Atrás</button>
+            <div id="breadcrumbs" class="breadcrumbs">
+                <!-- Se generará dinámicamente -->
+            </div>
+        </div>
+
+        <!-- Áreas de carpetas -->
+        <div class="content-view">
+            <div id="folder-list" class="folder-list">
+                <!-- Se generará dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <script src="tarea2-2.js"></script>
+
+</body>
+
+</html>
