@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cola de Preparación - Comida Rápida</title>
+    <link rel="stylesheet" href="tarea.css">
+
+</head>
+
+<body>
+
+    <h1>Sistema de Pantalla - Restaurante de Comida Rápida</h1>
+
+    <div class="container">
+        <!-- SECCIÓN CAJA (Ingreso de pedidos) -->
+        <div class="card">
+            <h2>Caja (Tomar Pedido)</h2>
+            <form id="form-pedido">
+                <label for="cliente">Nombre del Cliente:</label>
+                <input type="text" id="cliente" placeholder="Ej. Juan Pérez" required>
+
+                <label for="plato">Plato / Combo:</label>
+                <select id="plato" required>
+                    <option value="">-- Selecciona un producto --</option>
+                    <option value="Hamburguesa Doble con Papas">Hamburguesa Doble con Papas</option>
+                    <option value="Combo Nuggets + Gaseosa">Combo Nuggets + Gaseosa</option>
+                    <option value="Pizza Individual">Pizza Individual</option>
+                    <option value="Hot Dog Especial">Hot Dog Especial</option>
+                </select>
+
+                <button type="submit" class="btn-add">Enviar a Cocina</button>
+            </form>
+        </div>
+
+        <!-- SECCIÓN COCINA (Pantalla de preparación) -->
+        <div class="card">
+            <h2>Cocina (Cola de Preparación)</h2>
+            <button id="btn-entregar" class="btn-dispatch"> Entregar Siguiente Pedido</button>
+
+            <h3>Pedidos Pendientes:</h3>
+            <ul id="lista-pedidos">
+                <p class="empty-msg">No hay pedidos en cola.</p>
+            </ul>
+        </div>
+    </div>
+
+    <script src="tarea.js"></script>
+</body>
+
+</html>
